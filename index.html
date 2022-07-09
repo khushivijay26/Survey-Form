@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="main">
+        <h1 id="title" class="text-center">Student details</h1>
+        <p id="description" class="description text-center">Thank you for taking the time</p>
+        <div class="container">
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" placeholder="Enter your Name" value="" type="text" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" placeholder="Enter your Email" value="" type="email"class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label id="age-label" for="age">Age</label>
+                <input id="number" min="1" max="100" placeholder="Age" value="" type="number"class="form-control" required>
+            </div>
+            <div class="form-group">
+                <p class="text">Which course you will prefer?</p>
+                <label id="course-label">
+                    <input type="radio" name="course-label" value="select">HTML & CSS
+                </label></br>
+                <label id="course-label">
+                    <input type="radio" name="course-label" value="select">Java Script
+                </label>
+            </div>
+            <div class="form-group">
+                <p class="text">Which platform for coding you will prefer?</p>
+                <label id="code-label">
+                    <input type="checkbox" name="code-label" value="select">Freecodecamp
+                </label>
+                <label id="code-label">
+                    <input type="checkbox" name="number-label" value="select">VS code
+                </label>
+            </div>
+            <div class="form-group">
+                <p class="text">Which option best describes your current role?</p>
+                <select id="dropdown" class="form-control">
+                    <option disabled="" selected="" value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="full time job">Full time job</option>
+                    <option value="full time learner">Full time learner</option>
+                </select>
+            </div>
+            <div class="form-group">
+            <p class="text">Any comments or suggestions?</p>
+            <textarea name="comments" rows="5" cols="40" placeholder="All comments here" class="input-textarea"></textarea></br>
+        </div>
+            <button id="submit" type="submit" class="submit-button">Submit</button>
+        </form>
+    </main>
+    </div>
+</body>
