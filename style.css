@@ -2,9 +2,7 @@
   font-size: 1.25em;
   margin-bottom: 1.875rem;
   font-weight: 300;
-  line-height: 0.25;
 }
-
 body::before {
   content: '';
   position: fixed;
@@ -20,7 +18,6 @@ body::before {
   background-position: center;
 }
 .container {
-  width: 50%;
   margin: 0% 25% 0 25%;
   background-color: rgba(27, 27, 50, 0.8);
   height: 80%;
@@ -36,27 +33,20 @@ body::before {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
   color: white;
-  margin-top: .5rem;
-  margin-bottom: 1.5rem;
-  padding: 0.2rem;
-  display: flex;
-  flex-direction: column;
+  padding: 1rem;
+  
 }
 label {
-  display: flex;
   align-items: center;
   font-size: 1.25rem;
-  margin-bottom: 0.75rem;
-  margin-top: 2rem;
+  padding: 0.75rem 0.25rem;
 }
 
 .text {
   text-align: left;
   color: #ced4da;
   font-size: 1.25rem;
-  display: flex;
   width: 50vmax;
-  flex-wrap: wrap;
 }
 
 .form-control {
@@ -73,13 +63,14 @@ label {
 }
 
 .submit-button {
-  display: block;
-  width: 100%;
-  padding: 0.75rem;
+  padding: 0.75rem 0.25;
   background: #398453;
   color: white;
   cursor: pointer;
   font-size: large;
+  border-color: #398453;
+  margin-left: 20rem;
+  margin-bottom: 2rem;
 }
 
 .input-textarea {
